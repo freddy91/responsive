@@ -504,6 +504,7 @@
     border: none;
     border-radius: 4px;
     outline: none;
+    background: white;
     -webkit-box-shadow: 0px 0px 24px 1px rgba(0,0,0,0.1); 
     box-shadow: 0px 0px 24px 1px rgba(0,0,0,0.1);
   }
@@ -1080,8 +1081,8 @@
     }
 
     .all-content{
-      width: calc(100% - 75px);
-      left: 75px;
+      width: calc(100% - 0px);
+      left: 0px;
     }
 
     .input-date{
@@ -1091,9 +1092,14 @@
     .empty h3{
       font-size: 20px;
     }
-    
+
     .sidebar{
       display: none;
+    }
+
+    .content{
+      margin: 20px;
+    }
 
   }
   
