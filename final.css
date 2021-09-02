@@ -1091,6 +1091,9 @@
     .empty h3{
       font-size: 20px;
     }
+    
+    .sidebar{
+      display: none;
 
   }
   
