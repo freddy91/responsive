@@ -141,6 +141,19 @@
     color: rgb(255,255,255,0.8);
   }
 
+  .prueba{
+  background: #00b8ff;
+  width: 100%;
+  height: 50px;
+  display: none;
+}
+
+.prueba i{
+  color: #fff;
+  margin-top: 15px;
+
+}
+
 
  /************************************************************/
 
@@ -250,31 +263,6 @@
   }
   
   @media screen and (max-width:480px) {
-    .sidebar {
-      min-width: 75px;
-      max-width: 75px;
-    }
-    .sidebar .menu a i {
-      margin: 0;
-    }
-
-    .img-container{
-      margin-left: 8px;
-    }
-
-
-    .sidebar hr {
-      display: none;
-    }
-
-    .profile .name , .profile .photo{
-      display: none;
-    }
-
-    .profile{
-      min-width: 75px;
-      max-width: 75px;
-    }
 
     .all-content{
       width: calc(100% - 0px);
@@ -295,8 +283,15 @@
 
     .content{
       margin: 20px;
+      margin-top: 90px;
+    }
+
+    .prueba{
+      display: block;
     }
 
   }
   
 /************************************************************/
+
+
