@@ -146,6 +146,7 @@
   width: 100%;
   height: 50px;
   display: none;
+ cursor: pointer;
 }
 
 .prueba i{
@@ -277,9 +278,13 @@
       font-size: 20px;
     }
 
-    .sidebar{
-      display: none;
-    }
+  .sidebar {
+    z-index: 1;
+    -webkit-box-shadow: 11px 0px 13px 2px rgba(0,0,0,0.20); 
+box-shadow: 11px 0px 13px 2px rgba(0,0,0,0.20);
+display: none;
+  }
+
 
     .content{
       margin: 20px;
@@ -288,6 +293,10 @@
 
     .prueba{
       display: block;
+    }
+
+    .prueba i{
+     /* margin-left: 95px;*/
     }
 
   }
