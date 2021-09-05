@@ -146,7 +146,7 @@
   width: 100%;
   height: 50px;
   display: none;
- cursor: pointer;
+  position:relative;
 }
 
 .prueba i{
@@ -292,7 +292,7 @@ display: none;
     }
 
     .prueba{
-      display: block;
+      display: unset;
     }
 
     .prueba i{
