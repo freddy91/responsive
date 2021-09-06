@@ -196,6 +196,10 @@
         float: right;
     }
 
+    .container-link a {
+         float:right;
+      }
+
      @media screen and (max-width:480px) {
   
      	.btn{
@@ -213,15 +217,13 @@
 
       }
 
-      .container-button button{
+      .container-button button {
          float: left;
       }
 
       .btn-bottom{
          margin-bottom: 20px;
       }
-
-
 
      }
 
@@ -393,49 +395,7 @@
     }
   }*/
   
-  @media screen and (max-width:632px) {
 
-    .all-content{
-      width: calc(100% - 0px);
-      left: 0px;
-    }
-
-    .input-date{
-      padding-left: 10%;
-    }
-
-    .empty h3{
-      font-size: 20px;
-    }
-
-  .sidebar {
-    z-index: 1;
-    -webkit-box-shadow: 11px 0px 13px 2px rgba(0,0,0,0.20); 
-box-shadow: 11px 0px 13px 2px rgba(0,0,0,0.20);
-display: none;
-  }
-    .divider{
-      display: none;
-    }
-
-    .content{
-      margin: 20px;
-      margin-top: 45px;
-    }
-
-    .prueba{
-      display: unset;
-    }
-
-      .date-icon{
-    top: 60px;
-    right: 60px;
-  }
-
-
-
-  }
-  
 /************************************************************/
 
 
@@ -449,7 +409,7 @@ display: none;
   .search-bar{
     border: none;
     background: #fff;
-    width: 50%;
+    width: 70% !important;
     height: 45px;
     border-radius: 30px;
     outline: none;
@@ -492,3 +452,51 @@ display: none;
   .btn-add i{
     margin-right: 5px;
   }
+
+
+  @media screen and (max-width:632px) {
+
+    .all-content{
+      width: calc(100% - 0px);
+      left: 0px;
+    }
+
+    .input-date{
+      padding-left: 10%;
+    }
+
+    .empty h3{
+      font-size: 20px;
+    }
+
+  .sidebar {
+    z-index: 1;
+    -webkit-box-shadow: 11px 0px 13px 2px rgba(0,0,0,0.20); 
+box-shadow: 11px 0px 13px 2px rgba(0,0,0,0.20);
+display: none;
+  }
+    .divider{
+      display: none;
+    }
+
+    .content{
+      margin: 20px;
+      margin-top: 45px;
+    }
+
+    .prueba{
+      display: unset;
+    }
+
+      .date-icon{
+    top: 60px;
+    right: 60px;
+  }
+
+  .search-bar{
+    width: 100% !important;
+    margin-bottom: 20px;
+  }
+
+  }
+  

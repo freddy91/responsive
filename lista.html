@@ -10,7 +10,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css">
-	<link href="lista.css" rel="stylesheet" type="text/css">
+	<link href="../css/lista.css" rel="stylesheet" type="text/css">
 	<title>Lista clientes</title>
 </head>
 <body>
@@ -76,7 +76,7 @@
 					<div class="profile">
 						<div class="row profile-all">
 							<div class="col col-item photo"> 
-								<img src="default.png" alt="profilePhoto" class="profile-photo"> 
+								<img src="../images/default.png" alt="profilePhoto" class="profile-photo"> 
 							</div>
 							<div class="col col-item name"> 
 								<a href="#" class="link">Javier Fernandez</a> 
@@ -94,6 +94,29 @@
 			<div class="all-content">
 				<div class=" content">
 					<h3 class="title-wrapper text-uppercase">Clientes</h3>
+				<!--	<div class="container container-link">
+						<a  href="#" class="btn btn-add">
+							<i class="fas fa-plus fa-fw"></i>
+							Añadir cliente
+						</a>
+					</div> -->
+					<div class="row">
+						<div class="col-md-6">
+							<div>
+								<input type="text" name="search" class="search-bar" placeholder="Buscar..." id="search">
+               					<i class="fas fa-search fa-fw input-icon"></i>
+               					<span class="clear" onclick="document.getElementById('search').value = ''"></span>
+							</div>		
+						</div>
+						<div class="col-md-6">
+							<div class="container container-link">
+								<a  href="#" class="btn btn-add">
+									<i class="fas fa-plus fa-fw"></i>
+									Añadir cliente
+								</a>
+							</div>
+						</div>
+					</div> 
 				</div>
 			</div>
 		</div>
