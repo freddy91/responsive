@@ -291,7 +291,9 @@
 box-shadow: 11px 0px 13px 2px rgba(0,0,0,0.20);
 display: none;
   }
-
+    .divider{
+      display: none;
+    }
 
     .content{
       margin: 20px;
@@ -302,9 +304,6 @@ display: none;
       display: unset;
     }
 
-    .prueba i{
-     /* margin-left: 95px;*/
-    }
 
   }
   
