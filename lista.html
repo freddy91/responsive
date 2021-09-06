@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css">
+	<link href="../css/lista.css" rel="stylesheet" type="text/css">
+	<title>Lista clientes</title>
+</head>
+<body>
+	<div class="container-fluid">
+			<div class="row">
+				<div class="col-12 col-sm-auto prueba" >
+					<i class="fas fa-bars" onclick="barClick()" id="bar"></i>	
+				</div>
+			</div>
+		<div class="row">
+			<div class="sidebar col-12 col-sm-auto fixed" id="sidebar">
+				<div class="img-container"> 
+					<img src="logo.svg" width="50" height="50" alt="Logo"> 
+				</div>
+				<nav class=" lista menu h5 d-flex d-sm-block justify-content-center flex-wrap" id="lista"> 
+					<a href="#" class="link active">
+						<i class="fas fa-home fa-fw"></i>
+						<span>Inicio</span>
+					</a> 
+					<a href="#" class="link">
+						<i class="fas fa-calendar-alt fa-fw"></i>
+						<span>Reservar</span>
+					</a> 
+					<a href="#" class="link ">
+						<i class="fas fa-heartbeat fa-fw"></i>
+						<span>Mi cuerpo</span>
+					</a> 
+					<a href="#" class="link ">
+						<i class="fas fa-user-edit fa-fw"></i>
+						<span>Perfil</span>
+					</a>
+					<hr class="mx-3 divider"> 
+					<a href="#" class="link">
+						<i class="fas fa-users fa-fw"></i>
+						<span>Clientes</span>
+					</a> 
+					<a href="#" class="link ">
+						<i class="fas fa-briefcase fa-fw"></i>
+						<span>Entrenadores</span>
+					</a> 
+					<a href="#" class="link ">
+						<i class="fas fa-dollar-sign fa-fw"></i>
+						<span>Pagos</span>
+					</a> 
+					<a href="#" class="link">
+						<i class="fas fa-chart-area fa-fw"></i>
+						<span>Estadisticas</span>
+					</a> 
+					<a href="#" class="link ">
+						<i class="fas fa-dumbbell fa-fw"></i>
+						<span>Entrenos</span>
+					</a> 
+					<a href="#" class="link">
+						<i class="fas fa-dumbbell fa-fw"></i>
+						<span> Mis Entrenos</span>
+					</a> 
+					<a href="#" class="link">
+						<i class="fas fa-envelope fa-fw"></i>
+						<span>Enviar mensaje</span>
+					</a> 
+				</nav>
+				<div>
+					<div class="profile">
+						<div class="row profile-all">
+							<div class="col col-item photo"> 
+								<img src="../images/default.png" alt="profilePhoto" class="profile-photo"> 
+							</div>
+							<div class="col col-item name"> 
+								<a href="#" class="link">Javier Fernandez</a> 
+							</div>
+							<div class="col col-item icon-bar fa-fw exit"> 
+								<a href="#" class="link" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                     				<i class="fas fa-sign-out-alt fa-fw" ></i>
+                				</a>
+								<form id="logout-form" action="" method="POST" class="d-none"></form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="all-content">
+				<div class=" content">
+					<h3 class="title-wrapper text-uppercase">Clientes</h3>
+				</div>
+			</div>
+		</div>
+	</div>	
+
+
+
+
+
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+	<script>
+
+		function barClick(){
+			//alert("Adios");
+			var sidebar = document.getElementById("sidebar");
+			var barButton = document.getElementById("bar");
+			
+			if(barButton.classList.contains("cosa")){
+				sidebar.style.display = 'none';
+				barButton.style.marginLeft = "0px";
+				barButton.classList.remove("cosa");
+			}else{
+				sidebar.style.display = 'block';
+				barButton.style.marginLeft = "245px";
+				barButton.classList.add("cosa");
+			}
+
+		}
+
+
+	</script>
+
+</body>
+</html>
