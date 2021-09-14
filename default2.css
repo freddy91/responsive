@@ -10,6 +10,7 @@
     position:fixed;
     padding: 0;
     background: linear-gradient(#00b8ff, #02a3e0);
+    overflow-y: auto;
   }
 
   .sidebar .menu{
