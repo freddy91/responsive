@@ -1,0 +1,161 @@
+  body {
+    background: #ececec;
+    font-family: 'Roboto', 'sans-serif;' !important;
+  } 
+
+
+.sidebar {
+    width: 245px;
+    height: 100%;
+    position:fixed;
+    padding: 0;
+    background: linear-gradient(#00b8ff, #02a3e0);
+  }
+
+  .sidebar .menu{
+    font-size: 15px;
+    font-weight: bold;
+    padding: 0 0.75rem;
+    margin-top: 10px;
+  } 
+
+
+  .sidebar .menu .link {
+    display: block;
+    padding: 10px;
+    margin-left: 15px;
+    margin-top: 8px;
+    text-decoration: none;
+    color: #fff;
+    transition: background .3s;
+  }
+
+
+  .sidebar .menu .link:hover {
+    background: rgb(0,167,232,0.8);
+    border-radius: 4px;
+  }
+
+  .sidebar .menu .link:active{
+    color: rgb(255,255,255,0.7);
+    border-radius: 4px;
+  }
+
+  .sidebar .menu .link i {
+    margin-right: 20px;
+  }
+
+  .link{
+    color: white;
+  }
+
+  .active {
+    background-color: #fff;
+    color: #000 !important;
+    border-radius: 4px;
+  }
+
+  .divider{
+    color: #fff;
+    opacity: 1;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .img-container {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .profile{
+    background: #0492c9;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding: 7px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .profile .photo{
+    margin-left: 10px;
+  }
+
+
+  .profile .photo img{
+      height: 45px;
+      width: 45px;
+      object-fit: cover;
+      border-radius: 10px;
+  }
+
+  .full-name{
+    max-width: 90px;
+  }
+
+ .content{
+  margin: 60px;
+}
+
+  .all-content{
+    position: absolute;
+    height: 100%;
+    width: calc(100% - 245px);
+    left: 245px;
+  }
+
+.sidebar-responsive{
+  background: #00b8ff;
+  width: 100%;
+  height: 50px;
+  //display: none;
+  align-items: center;
+  position: absolute;
+  top: 100px;
+}
+
+.burger{
+  margin-left: 20px;
+}
+
+.burger i{
+  color: white;
+  cursor: pointer;
+}
+
+
+ @media screen and (max-width:632px) {
+      .sidebar{
+        z-index: 1;
+        -webkit-box-shadow: 11px 0px 13px 2px rgba(0,0,0,0.20); 
+        box-shadow: 11px 0px 13px 2px rgba(0,0,0,0.20);
+        display: none;
+      }
+
+   /*   .sidebar-responsive{
+        display: flex;
+      }*/
+
+      .all-content{
+        width: calc(100% - 0px);
+        left: 0px;
+      }
+
+      .content{
+        margin: 30px;
+        margin-top: 45px;
+    }
+ }
+
+
+.box {
+  display: flex;
+  align-items: center;
+  background: red;
+}
+
+.box div {
+  width: 100px;
+  height: 100px;
+}
