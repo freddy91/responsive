@@ -70,8 +70,8 @@
 
   .profile{
     background: #0492c9;
-    position: absolute;
-    width: 100%;
+    position: fixed;
+    width:inherit;
     bottom: 0;
     padding: 7px 15px;
     display: flex;
@@ -110,17 +110,21 @@
   background: #00b8ff;
   width: 100%;
   height: 50px;
-  //display: none;
+  display: none;
   align-items: center;
   position: absolute;
   top: 100px;
 }
 
 .burger{
-  margin-left: 20px;
+  background: #00b8ff;
+  height: 50px;
+  display: none;
 }
 
 .burger i{
+  margin-left: 10px;
+  margin-top: 15px;
   color: white;
   cursor: pointer;
 }
@@ -134,9 +138,9 @@
         display: none;
       }
 
-   /*   .sidebar-responsive{
-        display: flex;
-      }*/
+      .burger{
+        display: block;
+      }
 
       .all-content{
         width: calc(100% - 0px);
