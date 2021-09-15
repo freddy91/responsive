@@ -148,11 +148,11 @@
 
   .wrapper{
     background: #fff;
-    padding-bottom: 30px;
     border-radius: 4px;
     padding: 40px;
     -webkit-box-shadow: 0px 0px 24px 1px rgba(0,0,0,0.1); 
     box-shadow: 0px 0px 24px 1px rgba(0,0,0,0.1);
+    padding: 40px 40px 10px;
   }
 
 
@@ -266,8 +266,12 @@
     color: #00b8ff;
   }
 
+  .btn-container{
+    margin-bottom: 20px;
+  }
 
-@media screen and (max-width:810px){
+
+@media screen and (max-width:827px){
 
   .title{
     font-size: 16px;
@@ -277,6 +281,15 @@
    .input-box{
       margin-bottom: 20px;
       width: 100%;
+    }
+
+    .btn{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .btn-container{
+      margin-bottom: 0;
     }
  }
 
@@ -305,9 +318,6 @@
         margin-top: 45px;
     }
 
-    .btn{
-        width: 100%;
-        margin-bottom: 20px;
-    }
+
 
  }
