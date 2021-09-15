@@ -98,6 +98,7 @@
 
  .content{
   margin: 70px;
+  overflow-y: auto;
 }
 
   .all-content{
@@ -152,7 +153,7 @@
     padding: 40px;
     -webkit-box-shadow: 0px 0px 24px 1px rgba(0,0,0,0.1); 
     box-shadow: 0px 0px 24px 1px rgba(0,0,0,0.1);
-    padding: 40px 40px 10px;
+    margin-bottom: 50px;
   }
 
 
@@ -266,10 +267,6 @@
     color: #00b8ff;
   }
 
-  .btn-container{
-    margin-bottom: 20px;
-  }
-
 
 @media screen and (max-width:827px){
 
@@ -288,9 +285,6 @@
         margin-bottom: 20px;
     }
 
-    .btn-container{
-      margin-bottom: 0;
-    }
  }
 
 
