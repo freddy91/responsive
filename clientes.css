@@ -228,6 +228,7 @@
 .table-container{
   overflow: hidden;
   overflow-x: auto;
+  padding-bottom: 70px;
 }
 
   .custom-table {
