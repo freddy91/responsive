@@ -1302,7 +1302,7 @@
       }
 
       .content{
-        margin: 20px;
+        margin: 0;
         margin-top: 45px;
     }
 
@@ -1323,7 +1323,6 @@
     .search-bar-modal{
       max-width: 130px;
     }
-
 
  }
 
