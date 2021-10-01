@@ -1094,7 +1094,6 @@
     padding-left: 28px;
     -webkit-box-shadow: 0px 0px 24px 1px rgba(0,0,0,0.1); 
     box-shadow: 0px 0px 24px 1px rgba(0,0,0,.1);
-
   }
 
   .search-bar-modal::placeholder{
@@ -1315,10 +1314,24 @@
  }
 
 
+
+ @media screen and (max-width: 404px){
+    .button-training button:first-child{
+        font-size: 10px;
+    }
+
+    .search-bar-modal{
+      max-width: 130px;
+    }
+
+
+ }
+
+
  @media screen and (max-width: 282px){
 
   .button-add{
-    font-size: 10px;
+    font-size: 10px; 
   }
 
  }
