@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css">
+	<link href="all.css" rel="stylesheet" type="text/css">
+	<title>Lista de entrenos</title>
+</head>
+<body>
+			<div class="sidebar" id="sidebar">
+				<div class="img-container"> 
+					<img src="logo.svg" width="50" height="50" alt="Logo"> 
+				</div>
+				<nav class="menu" id="lista"> 
+					<a href="default2.html" class="link active">
+						<i class="fas fa-home fa-fw"></i>
+						<span>Inicio</span>
+					</a> 
+					<a href="#" class="link">
+						<i class="fas fa-calendar-alt fa-fw"></i>
+						<span>Reservar</span>
+					</a> 
+					<a href="#" class="link ">
+						<i class="fas fa-heartbeat fa-fw"></i>
+						<span>Mi cuerpo</span>
+					</a> 
+					<a href="profile.html" class="link ">
+						<i class="fas fa-user-edit fa-fw"></i>
+						<span>Perfil</span>
+					</a>
+					<hr class="divider"> 
+					<a href="clientes.html" class="link">
+						<i class="fas fa-users fa-fw"></i>
+						<span>Clientes</span>
+					</a> 
+					<a href="#" class="link ">
+						<i class="fas fa-briefcase fa-fw"></i>
+						<span>Entrenadores</span>
+					</a> 
+					<a href="#" class="link ">
+						<i class="fas fa-dollar-sign fa-fw"></i>
+						<span>Pagos</span>
+					</a> 
+					<a href="#" class="link">
+						<i class="fas fa-chart-area fa-fw"></i>
+						<span>Estadisticas</span>
+					</a> 
+					<a href="#" class="link ">
+						<i class="fas fa-dumbbell fa-fw"></i>
+						<span>Entrenos</span>
+					</a> 
+					<a href="#" class="link">
+						<i class="fas fa-dumbbell fa-fw"></i>
+						<span> Mis Entrenos</span>
+					</a> 
+					<a href="#" class="link">
+						<i class="fas fa-envelope fa-fw"></i>
+						<span>Enviar mensaje</span>
+					</a> 
+				</nav>
+
+			<div class="profile">
+				<div class="photo">
+					<img src="default.png" alt="profilePhoto" class="profile-photo"> 
+				</div>
+				<div class="full-name">
+					<div class="name">
+						<a href="#" class="link">Javier</a> 
+					</div>
+					<div class="surname">
+						<a href="#" class="link">Fernandez</a> 
+					</div>
+				</div>
+				<div class="exit">
+						<a href="#" class="link">
+                     		<i class="fas fa-sign-out-alt fa-fw" ></i>
+                		</a>					
+				</div>
+			</div>
+
+			</div>
+			<div class="all-content">
+				<div class="burger" id="bar">
+					<i class="fas fa-bars" onclick="barClick()" id="bar"></i>	
+				</div>
+				<div class="content ">
+					<div class="training-container">
+						<div class="date-picker-container">
+							<input type="date" class="input-date" id="datePicker">
+							<i class="far fa-calendar-alt fa-fw date-icon "></i> 
+						</div>
+						<div class="details-training-container">
+							<div class="wrapper-training">
+								<div class="details-training">
+									<span class="text-color-primary text-bold">13:00 - 14:00</span>
+									<div class="status-training">
+										<span class="text-bold text-grey">Crossfit</span>
+										<span class="badge-custom badge-red">CLASE COMPLETA</span>
+										<span class="badge-custom badge-green">CLASE RESERVADA</span>				
+									</div>
+									<span class="text-bold text-capcity">Plazas ocupadas: <span class="text-red">0/20</span></span>
+								</div>
+								<div class="button-training">
+									<button class="button button-primary text-bold">Cancelar Reserva</button>
+									<button class="button button-primary text-bold" style="margin-bottom: 0px">Detalles</button>
+								</div>
+								<hr class="spacer-training">
+								<div class="admin-container">
+									<button class="mini-button button-cancel" id="open-modal">Apuntar a un atleta</button>
+									<button class="mini-button button-cancel" style="margin-bottom: 0px">Modificar entreno</button>
+								</div>
+							</div>
+						</div>
+						<div class="details-training-container">
+							<div class="wrapper-training">
+								<div class="details-training">
+									<span>13:00 - 14:00</span>
+									<span>Crossfit</span>
+									<span>Plazas ocupadas: 0/20</span>
+								</div>
+								<div class="button-training">
+									<button class="button button-primary">Cancelar Reserva</button>
+									<button class="button button-primary" style="margin-bottom: 0px">Detalles</button>
+								</div>
+								<hr class="spacer-training">
+							</div>
+						</div>
+						<div class="details-training-container">
+							<div class="wrapper-training">
+								<div class="details-training">
+									<span>13:00 - 14:00</span>
+									<span>Crossfit</span>
+									<span>Plazas ocupadas: 0/20</span>
+								</div>
+								<div class="button-training">
+									<button class="button button-primary">Cancelar Reserva</button>
+									<button class="button button-primary" style="margin-bottom: 0px">Detalles</button>
+								</div>
+							</div>
+						</div>	
+					</div>
+
+
+					<div class="modal-container" id="modal-container">
+						<div class="modal-wrapper hidden-modal" id="modal">
+							<div class="modal-custom">
+								<div class="header-modal">
+									<div class="close-modal">
+										<small>Selecciona el cliente que quiere apuntar</small>
+										<button type="submit" class="button-back" id="close-modal"><i class="fas fa-times fa-fw"></i></button>
+									</div>
+									<div class="search-container-modal">
+										<input type="text" name="search" class="search-bar-modal" placeholder="Buscar..." id="search">
+										<i class="fas fa-search fa-fw icon-search-modal"></i>
+									</div>
+									<hr class="spacer-training">
+								</div>
+								<div class="body-modal">
+									<table class="table-modal">
+										<thead>
+											<tr>
+												<th>nombre</th>
+												<th></th>
+											</tr>
+											<tr class="spacer-modal"></tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>
+													<div class="table-modal-content">
+														<span>Javier</span>
+														<button type="submit" class="button-table-modal"><i class="fas fa-plus fa-fw"></i> </button>
+													</div>
+												</td>
+											</tr>
+											<tr class="spacer-modal"></tr>
+											<tr>
+												<td>
+													<div class="table-modal-content">
+														<span>Javier</span>
+														<button type="submit" class="button-table-modal"><i class="fas fa-plus fa-fw"></i> </button>
+													</div>
+												</td>			
+											</tr>
+											<tr class="spacer-modal"></tr>
+											<tr>
+												<td>
+													<div class="table-modal-content">
+														<span>Javier</span>
+														<button type="submit" class="button-table-modal"><i class="fas fa-plus fa-fw"></i> </button>
+													</div>
+												</td>
+											</tr>
+											<tr class="spacer-modal"></tr>
+											<tr>
+												<td>
+													<div class="table-modal-content">
+														<span>Pedro</span>
+														<button type="submit" class="button-table-modal"><i class="fas fa-plus fa-fw"></i> </button>
+													</div>
+												</td>
+											</tr>
+											<tr class="spacer-modal"></tr>
+											<tr>
+												<td>
+													<div class="table-modal-content">
+														<span>Javier</span>
+														<button type="submit" class="button-table-modal"><i class="fas fa-plus fa-fw"></i> </button>
+													</div>
+												</td>
+											</tr>
+											<tr class="spacer-modal"></tr>
+											<tr>
+												<td>
+													<div class="table-modal-content">
+														<span>Javier</span>
+														<button type="submit" class="button-table-modal"><i class="fas fa-plus fa-fw"></i> </button>
+													</div>
+												</td>
+											</tr>
+											<tr class="spacer-modal"></tr>
+											<tr>
+												<td>
+													<div class="table-modal-content">
+														<span>Javier</span>
+														<button type="submit" class="button-table-modal"><i class="fas fa-plus fa-fw"></i> </button>
+													</div>
+												</td>
+											</tr>
+											<tr class="spacer-modal"></tr>
+											<tr>
+												<td>
+													<div class="table-modal-content">
+														<span>Javier</span>
+														<button type="submit" class="button-table-modal"><i class="fas fa-plus fa-fw"></i> </button>
+													</div>
+												</td>
+											</tr>
+											<tr class="spacer-modal"></tr>
+											<tr>
+												<td>
+													<div class="table-modal-content">
+														<span>Javier</span>
+														<button type="submit" class="button-table-modal"><i class="fas fa-plus fa-fw"></i> </button>
+													</div>
+												</td>
+											</tr>
+											<tr class="spacer-modal"></tr>
+											<tr>
+												<td>
+													<div class="table-modal-content">
+														<span>Javier</span>
+														<button type="submit" class="button-table-modal"><i class="fas fa-plus fa-fw"></i> </button>
+													</div>
+												</td>
+											</tr>
+											<tr class="spacer-modal"></tr>
+											<tr>
+												<td>
+													<div class="table-modal-content">
+														<span>Javier</span>
+														<button type="submit" class="button-table-modal"><i class="fas fa-plus fa-fw"></i> </button>
+													</div>
+												</td>
+											</tr>
+											<tr class="spacer-modal"></tr>
+											<tr>
+												<td>
+													<div class="table-modal-content">
+														<span>Javier</span>
+														<button type="submit" class="button-table-modal"><i class="fas fa-plus fa-fw"></i> </button>
+													</div>
+												</td>
+											</tr>
+											<tr class="spacer-modal"></tr>
+											<tr>
+												<td>
+													<div class="table-modal-content">
+														<span>Javier</span>
+														<button type="submit" class="button-table-modal"><i class="fas fa-plus fa-fw"></i> </button>
+													</div>
+												</td>
+											</tr>
+											<tr class="spacer-modal"></tr>
+											<tr>
+												<td>
+													<div class="table-modal-content">
+														<span>Javier</span>
+														<button type="submit" class="button-table-modal"><i class="fas fa-plus fa-fw"></i> </button>
+													</div>
+												</td>
+											</tr>
+											<tr class="spacer-modal"></tr>
+											<tr>
+												<td>
+													<div class="table-modal-content">
+														<span>Javier</span>
+														<button type="submit" class="button-table-modal"><i class="fas fa-plus fa-fw"></i> </button>
+													</div>
+												</td>
+											</tr>
+											<tr class="spacer-modal"></tr>
+											<tr>
+												<td>
+													<div class="table-modal-content">
+														<span>Javier</span>
+														<button type="submit" class="button-table-modal"><i class="fas fa-plus fa-fw"></i> </button>
+													</div>
+												</td>
+											</tr>
+											<tr class="spacer-modal"></tr>
+											<tr>
+												<td>
+													<div class="table-modal-content">
+														<span>Javier</span>
+														<button type="submit" class="button-table-modal"><i class="fas fa-plus fa-fw"></i> </button>
+													</div>
+												</td>
+											</tr>
+											<tr class="spacer-modal"></tr>
+											<tr>
+												<td>
+													<div class="table-modal-content">
+														<span>Javier</span>
+														<button type="submit" class="button-table-modal"><i class="fas fa-plus fa-fw"></i> </button>
+													</div>
+												</td>
+											</tr>
+											<tr class="spacer-modal"></tr>
+											<tr>
+												<td>
+													<div class="table-modal-content">
+														<span>Javier</span>
+														<button type="submit" class="button-table-modal"><i class="fas fa-plus fa-fw"></i> </button>
+													</div>
+												</td>
+											</tr>
+											<tr class="spacer-modal"></tr>
+											<tr>
+												<td>
+													<div class="table-modal-content">
+														<span>Javier</span>
+														<button type="submit" class="button-table-modal"><i class="fas fa-plus fa-fw"></i> </button>
+													</div>
+												</td>
+											</tr>
+											<tr class="spacer-modal"></tr>
+											<tr>
+												<td>
+													<div class="table-modal-content">
+														<span>Javier</span>
+														<button type="submit" class="button-table-modal"><i class="fas fa-plus fa-fw"></i> </button>
+													</div>
+												</td>
+											</tr>
+											<tr class="spacer-modal"></tr>
+											<tr>
+												<td>
+													<div class="table-modal-content">
+														<span>Final</span>
+														<button type="submit" class="button-table-modal"><i class="fas fa-plus fa-fw"></i> </button>
+													</div>
+												</td>
+											</tr>
+											<tr class="spacer-modal"></tr>
+										</tbody>
+									</table>
+									
+								</div>
+							</div>	
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+
+
+
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+	<script>
+
+		function barClick(){
+			var sidebar = document.getElementById("sidebar");
+			var barButton = document.getElementById("bar");
+			
+			if(barButton.classList.contains("hidden-bar")){
+				sidebar.style.display = 'none';
+				barButton.style.marginLeft = "0px";
+				barButton.classList.remove("hidden-bar");
+			}else{
+				sidebar.style.display = 'block';
+				barButton.style.marginLeft = "245px";
+				barButton.classList.add("hidden-bar");
+			}
+		}
+
+	</script>
+
+	<script>
+		let open = document.getElementById('open-modal')
+		let close = document.getElementById('close-modal');
+		let modalC = document.getElementById('modal-container');
+		let modal = document.getElementById('modal');
+
+
+		open.addEventListener("click", function(){
+			modalC.style.opacity = "1";
+			modalC.style.visibility = "visible";
+			modal.classList.toggle("hidden-modal");
+		});
+
+
+		close.addEventListener("click", function(){
+			closeModal();
+		});
+
+		modalC.addEventListener("click", function(){
+			closeModal()
+		});
+
+		function closeModal() {
+			modal.classList.toggle("hidden-modal");
+			setTimeout(function(){
+				modalC.style.opacity = "0";
+				modalC.style.visibility = "hidden";
+			},700);
+		}
+
+	</script>
+
+</body>
+</html>
