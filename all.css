@@ -132,6 +132,9 @@
   background: #00b8ff;
   height: 50px;
   display: none;
+  position: sticky;
+  top: 0;
+  z-index: 2;
 }
 
 .burger i{
