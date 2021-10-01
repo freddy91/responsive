@@ -427,8 +427,10 @@
 			closeModal();
 		});
 
-		modalC.addEventListener("click", function(){
-			closeModal()
+		window.addEventListener("click", function(e){
+			if(e.target == modalC){
+				closeModal();
+			}
 		});
 
 		function closeModal() {
