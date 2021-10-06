@@ -12,6 +12,7 @@
     padding: 0;
     background: linear-gradient(#00b8ff, #02a3e0);
     overflow-y: auto;
+    transition: transform 1s ease;
   }
 
   .sidebar .menu{
@@ -107,7 +108,7 @@
   }
 
  .content{
-  margin: 60px;
+  margin-top: 60px;
   overflow-y: auto;
 }
 
@@ -134,7 +135,6 @@
   display: none;
   position: sticky;
   top: 0;
-  z-index: 2;
 }
 
 .burger i{
@@ -142,6 +142,7 @@
   margin-top: 15px;
   color: white;
   cursor: pointer;
+  transition: transform 1s ease;
 }
 
 
@@ -151,9 +152,17 @@
     padding: 40px;
     -webkit-box-shadow: 0px 0px 24px 1px rgba(0,0,0,0.1); 
     box-shadow: 0px 0px 24px 1px rgba(0,0,0,0.1);
+    width:90%;
     max-width: 1100px;
     margin: auto;
     margin-bottom: 50px;
+  }
+
+  .no-wrapper{
+    width:90%;
+    max-width: 1100px;
+    margin: auto;
+    margin-bottom: 50px;  
   }
 
 
@@ -326,6 +335,8 @@
     box-shadow: 0 1px 1px 0 rgb(66,133,244, .8),
                 0 1px 3px 1px rgb(66,133,244, .5);
     background-color: #287ae6;
+    color: white;
+    text-decoration: none;
   }
 
 
@@ -426,7 +437,9 @@
   padding-top: 20px;
   padding: 20px;
   padding-bottom: 0;
-
+  max-width:1100px;
+  width: 100%;
+  margin: auto;
 }
 
 .profile-image{
@@ -437,6 +450,8 @@
     box-shadow: 0px 0px 24px 1px rgba(0,0,0,0.1);
     margin-bottom: 20px;
     width: 25%;
+    display: flex;
+    justify-content: center;
 }
 
   .profile-details{
@@ -447,7 +462,6 @@
     box-shadow: 0px 0px 24px 1px rgba(0,0,0,0.1);
     margin-bottom: 20px;
     width:70%;
-
   }
 
   .profile-image-container{
@@ -655,7 +669,7 @@
     border-radius: 4px;
     outline: none;
     background: white;
-    padding-left: 44%;
+   text-align: center;
     color: rgba(0, 0, 0, 0.6);
   }
 
@@ -715,12 +729,9 @@
   /* RESERVATION LIST */
 
  .training-container{
-
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    margin: 0 50px;
-    padding-top: 20px;
  }
 
  .date-picker-container{
@@ -766,6 +777,10 @@
 
  .status-training span{
     margin-right: 10px;
+  }
+
+  .admin-container a{
+    text-align: center;
   }
 
  /************************************************************/
@@ -1043,7 +1058,8 @@
     background: white;
     margin-left: 150px;
     margin-top: 100px;
-    width: 40%;
+    width: 85%;
+    max-width: 570px;
     height: 50%;
     border-radius: 4px;
     transition: transform 1s;
@@ -1107,13 +1123,39 @@
   }
 
 
-
   .icon-search-modal{
     position: absolute;
-    font-size: 12px;
-    top: 9px;
+    font-size: 10px;
+    top: 7px;
     left: 10px;
   }
+
+  .clear-search-bar{
+    position: absolute;
+    width: 10px;
+    height: 15px;
+    top:  6px;
+    left: 200px;
+    cursor: pointer;
+}
+
+.clear-search-bar::before{
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 12px;
+    background: #999;
+    transform: rotate(45deg);
+}
+
+.clear-search-bar::after{
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 12px;
+    background: #999;
+    transform: rotate(315deg);
+}
 
 
 
@@ -1167,6 +1209,47 @@
   .spacer-modal {
     border: 1px solid #ececec;
   }
+
+
+ /************************************************************/
+
+
+ /* EMPTY DATA */
+
+.empty-data{
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+}
+
+.empty-data h3{
+  opacity: 0.5;
+}
+
+
+ /************************************************************/
+
+
+ /* ALERTAS */ 
+
+ .custom-alert {
+  padding: .75rem 1.25rem;
+  margin-bottom: 2rem;
+  border: 1px solid transparent;
+  border-radius: .25rem
+}
+
+.alert-red {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb
+}
+
+.alert-green {
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb
+}
 
 
  /************************************************************/
@@ -1293,7 +1376,7 @@
         z-index: 1;
         -webkit-box-shadow: 11px 0px 13px 2px rgba(0,0,0,0.20); 
         box-shadow: 11px 0px 13px 2px rgba(0,0,0,0.20);
-        display: none;
+        transform: translateX(-150vw);
       }
 
       .burger{
@@ -1306,14 +1389,11 @@
       }
 
       .content{
-        margin: 0;
         margin-top: 45px;
     }
 
     .modal-wrapper{
-      margin-left: 0;
       margin-top: 100px;
-      width: 60%;
     }
  }
 
@@ -1328,10 +1408,9 @@
       max-width: 130px;
     }
 
-    .modal-wrapper{
-        width: 80%;
-      }
-
+    .clear-search-bar{
+      left: 120px;
+    }
  }
 
 

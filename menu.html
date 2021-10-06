@@ -84,15 +84,16 @@
                 		</a>					
 				</div>
 			</div>
-		</div>
-			<div class="burger">
-				<i class="fas fa-bars" onclick="barClick()" id="bar"></i>	
+
 			</div>
 			<div class="all-content">
+				<div class="burger">
+					<i class="fas fa-bars" onclick="barClick()" id="bar"></i>	
+				</div>
 				<div class="content ">
 					Hola
 				</div>
-			</div> 
+			</div>
 
 
 
@@ -112,7 +113,6 @@
 			
 			if(barButton.classList.contains("hidden-bar")){
 				sidebar.style.transform = 'translateX(-150vw)';
-				//barButton.style.marginLeft = "0px";
 				barButton.style.transform = 'translateX(0)';
 				barButton.classList.remove("hidden-bar");
 			}else{
